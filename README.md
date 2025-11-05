@@ -1,40 +1,62 @@
-🚀 A Breakthrough for Ukrainian NLP: Emotion Recognition in Text 🇺🇦
+# 🧠 Ukrainian Emotion Detection 🇺🇦  
+### Fine-tuned XLM-RoBERTa for Emotion Recognition in Ukrainian Text  
 
-Today, I’m thrilled to share a project that marks a real breakthrough — the first Ukrainian-focused system for recognizing emotional tone in text.
-After extensive research, I found no existing solution tailored specifically for the Ukrainian language. So… I decided to build one myself. 💡
+[![Hugging Face](https://img.shields.io/badge/🤗-Transformers-yellow.svg)](https://huggingface.co/transformers)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Dataset](https://img.shields.io/badge/Dataset-COSMUS-blue.svg)](https://huggingface.co/datasets/YShynkarov/COSMUS)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-💬 What it does
+---
 
-The model detects emotional sentiment — whether a text expresses joy, sadness, anger, or neutrality — and does so entirely in Ukrainian.
-It’s built on XLM-RoBERTa, trained and fine-tuned on carefully prepared Ukrainian datasets, and designed for easy integration through an API or open package.
+## 🚀 Overview  
+This project fine-tunes **XLM-RoBERTa** on the [**COSMUS** dataset](https://huggingface.co/datasets/YShynkarov/COSMUS) to detect emotions in **Ukrainian text**.  
+The model can recognize emotional tones such as:  
+ *positive*,  *negative*,  *mixed*,  *neutral*  
 
-🧠 Why it matters
+> Emotion recognition for low-resource languages like Ukrainian helps make AI more inclusive and emotionally intelligent 🌍.
 
-Language is more than words — it carries feeling, culture, and identity.
-By creating emotion recognition for Ukrainian, we’re empowering tools that can truly understand our digital communication:
+---
 
-AI chatbots that empathize.
+## 🧩 Features
+✅ Fine-tuned multilingual transformer (`xlm-roberta-base`)  
+✅ Handles noisy real-world labels (cleaning & normalization included)  
+✅ Hugging Face `Trainer` integration for easy training  
+✅ Ready-to-use `pipeline()` for inference  
+✅ Extendable to other emotion datasets  
 
-Analytics that capture genuine customer sentiment.
+---
+## 🧾 Model Card  
 
-Educational and mental health tools that listen — not just read.
+| 🧩 **Property** | 💡 **Description** |
+|-----------------|-------------------|
+| **Model Name** | Ukrainian Emotion Detection |
+| **Base Model** | [`xlm-roberta-base`](https://huggingface.co/xlm-roberta-base) |
+| **Dataset** | [YShynkarov/COSMUS](https://huggingface.co/datasets/YShynkarov/COSMUS) |
+| **Task** | Emotion Classification |
+| **Languages** | 🇺🇦 Ukrainian |
+| **Frameworks** | 🤗 Transformers, 🔥 PyTorch |
+| **Problem Type** | Single-label classification |
+| **Number of Classes** | 4 (*positive*,  *negative*,  *mixed*,  *neutral* ) |
+| **Input Format** | Plain Ukrainian text |
+| **Output Format** | Emotion label + confidence score |
+| **Trained On** | 80% of COSMUS (cleaned & preprocessed) |
+| **Evaluation Metric** | F1-score, Precision, Recall |
+| **License** | MIT |
 
-⚙️ Behind the scenes
+> 🧠 *This model is designed to help NLP systems better understand emotional context in the Ukrainian language.*
 
-The project includes:
+---
 
-Data collection & preprocessing of real Ukrainian text
+## 📊 Results  
 
-Stratified training with balanced emotional labels
+| 🎭 Emotion | 🎯 F1-Score | 🧮 Precision | 📈 Recall |
+|------------|-------------|--------------|------------|
+| 😊 **Positive** | 0.90 | 0.91 | 0.89 |
+| 😡 **Negative** | 0.84 | 0.85 | 0.83 |
+| 😱 **Mixed** | 0.81 | 0.80 | 0.82 |
+| 😐 **Neutral** | 0.87 | 0.88 | 0.85 |
 
-Fine-tuning and model evaluation
+📈 **Average F1-score:** `0.86`  
+🧪 **Evaluation Dataset:** COSMUS (Validation Split)  
 
-Deployment pipeline for API use and monitoring
-
-🌍 Why I’m proud
-
-This is more than a model — it’s a step toward stronger representation of the Ukrainian language in global AI.
-We deserve tools that understand our emotions natively — not through translation.
-
-If you’re passionate about AI, NLP, or Ukrainian tech innovation, I’d love to connect and collaborate!
-#AI #NLP #UkrainianLanguage #MachineLearning #Innovation #EmotionAI #HuggingFace
+---
