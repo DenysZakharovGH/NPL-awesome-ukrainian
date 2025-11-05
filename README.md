@@ -56,3 +56,13 @@ The model can recognize emotional tones such as:
 
 ---
 
+| Comment UA | Commect Eng | Detected emotion |
+|------------|-------------|--------------|
+| **Я дуже радий цьому!** | I am really happy about that! | positive (0.91) |
+| **Мені страшно за майбутнє** | I am afraid about my future | negative (0.87) |
+| **Це найгірший день у моєму житті.** | That is a worth day in my life | negative (0.86) |
+| **не ну такого я ще не бачив** | emmm so, I haven't seen such thing before | negative (0.82) |
+| **Отримав провід — працює, але горить червоним індикатором** | Got cable - works, but red indicator lights | neutral (0.91) |
+
+---
+
