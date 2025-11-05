@@ -49,14 +49,10 @@ The model can recognize emotional tones such as:
 
 ## 📊 Results  
 
-| 🎭 Emotion | 🎯 F1-Score | 🧮 Precision | 📈 Recall |
-|------------|-------------|--------------|------------|
-| 😊 **Positive** | 0.90 | 0.91 | 0.89 |
-| 😡 **Negative** | 0.84 | 0.85 | 0.83 |
-| 😱 **Mixed** | 0.81 | 0.80 | 0.82 |
-| 😐 **Neutral** | 0.87 | 0.88 | 0.85 |
 
-📈 **Average F1-score:** `0.86`  
-🧪 **Evaluation Dataset:** COSMUS (Validation Split)  
+| 🎭 Epoch | 🎯 F1-Score | 🧮 Acc | 📈 Valid Loss |
+|------------|-------------|--------------|------------|
+| **1** | 0.74 | 0.76 | 0.70 |
 
 ---
+
