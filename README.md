@@ -49,7 +49,6 @@ The model can recognize emotional tones such as:
 
 ## 📊 Results  
 
-
 | 🎭 Epoch | 🎯 F1-Score | 🧮 Acc | 📈 Valid Loss |
 |------------|-------------|--------------|------------|
 | **1** | 0.74 | 0.76 | 0.70 |
@@ -65,4 +64,3 @@ The model can recognize emotional tones such as:
 | **Отримав провід — працює, але горить червоним індикатором** | Got cable - works, but red indicator lights | neutral (0.91) |
 
 ---
-
