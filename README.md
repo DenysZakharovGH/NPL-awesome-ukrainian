@@ -64,3 +64,12 @@ The model can recognize emotional tones such as:
 | **Отримав провід — працює, але горить червоним індикатором** | Got cable - works, but red indicator lights | neutral (0.91) |
 
 ---
+
+## 🧑‍💻 Author
+
+**Denys**  
+Passionate about AI and computer vision.
+Reach me at: [denys.zakharov.work@gmail.com]  
+
+---
+
